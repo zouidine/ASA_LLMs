@@ -214,9 +214,9 @@ class LABR:
         open(file_name, 'w').write(u''.join(lines).encode('utf-8'))
 
     def read_clean_reviews(self):
-        #return self.read_review_file(self.REVIEWS_PATH +
-         #                            self.CLEAN_REVIEWS_FILE)
-         return self.read_review_file("/content/LABR/data/reviews.tsv")
+        return self.read_review_file(self.REVIEWS_PATH +
+                                     self.CLEAN_REVIEWS_FILE)
+         #return self.read_review_file("/content/LABR/data/reviews.tsv")
 
     def read_raw_reviews(self):
         return self.read_review_file(self.REVIEWS_PATH + self.RAW_REVIEWS_FILE)
